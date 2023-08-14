@@ -15,7 +15,7 @@ const CardProduct = ({ products, handleProductCardClick, index }) => {
     >
       <Badge.Ribbon
         text={`Rp.${products.price}`}
-        color={products.price < 25000 ? 'green' : 'red'}
+        color={products.price < 500000 ? 'green' : 'red'}
       >
         <Card
           className="lg:w-64 w-56 h-56 bg-center bg-cover relative overflow-hidden cursor-pointer"
@@ -25,8 +25,8 @@ const CardProduct = ({ products, handleProductCardClick, index }) => {
           onClick={() => handleProductCardClick(products)}
         >
           <div className="absolute inset-0 p-4 flex flex-col justify-end">
-            <h3 className="text-xl font-semibold mb-2 text-white">
-              {products.title}
+            <h3 className="lg:text-xl text-lg font-semibold mb-2 text-white">
+              {products.title.length > 20 ? products.title.slice(0, 20)+'...' : products.title}
             </h3>
           </div>
         </Card>

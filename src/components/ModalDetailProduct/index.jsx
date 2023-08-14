@@ -19,7 +19,7 @@ const ModalDetailProduct = ({ modalOpen, setModalOpen, product }) => {
       >
         <p>{product?.desc_product}</p>
         <div className="mt-2">
-          <Tag color={product?.price < 25000 ? 'green' : 'red'}>
+          <Tag color={product?.price < 500000 ? 'green' : 'red'}>
             Rp.{product?.price}
           </Tag>
           <Button
