@@ -35,10 +35,11 @@ const Register = () => {
               {
                 required: true,
                 message: 'Please input your email!',
+                type: 'email'
               },
             ]}
           >
-            <Input type="email" placeholder="Email" />
+            <Input placeholder="Email" />
           </Form.Item>
 
           <Form.Item

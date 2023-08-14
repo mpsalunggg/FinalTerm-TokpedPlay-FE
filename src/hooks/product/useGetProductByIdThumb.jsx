@@ -1,6 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
-import { message } from 'antd'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
@@ -17,11 +16,7 @@ const useGetProductByIdThumb = () => {
           setProduct(response.data?.data)
         }
       } catch (err) {
-        message.warning({
-          content: err.response.data.message,
-          duration: 1,
-          className: 'mt-16',
-        })
+        console.log(err.response.data.message)
       }
     }
 

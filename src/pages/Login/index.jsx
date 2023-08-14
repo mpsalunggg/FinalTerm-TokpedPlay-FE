@@ -59,7 +59,7 @@ const Login = () => {
                 border: 'none',
               }}
             >
-              Submit
+              Masuk
             </Button>
             <p className="text-center mt-2">
               Belum punya akun?, Yuk{' '}
